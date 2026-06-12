@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>N-Queens Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="panel" id="leftPanel">
+    <h2>N-Queens</h2>
+    <label>Board Size:</label>
+    <select id="boardSize">
+      <option value="4">4x4</option>
+      <option value="6">6x6</option>
+      <option value="8" selected>8x8</option>
+    </select>
+    <button id="undoBtn">Undo</button>
+    <button id="redoBtn">Redo</button>
+    <button id="resetBtn">Reset</button>
+    <button id="solveBtn">Find All Solutions</button>
+  </div>
+  <div id="boardContainer"></div>
+  <div class="panel" id="rightPanel">
+    <h3>All Solutions</h3>
+    <div id="solutionList"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
